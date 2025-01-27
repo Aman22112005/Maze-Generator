@@ -4,11 +4,17 @@
 #define W 18// Width
 #define L 20 // Length
 
-
 char arr[W][L];
 
+int generator(int r, int c,int n, int a);
 void move(int*r, int*c, int n, int z);
+int left(int r,int c);
+int right(int r,int c);
+int up(int r,int c);
+int down(int r,int c);
 void printmaze();
+int move_possible(int r,int c)
+int can_move(int r, int c, int n)
 
 
 int main() {
